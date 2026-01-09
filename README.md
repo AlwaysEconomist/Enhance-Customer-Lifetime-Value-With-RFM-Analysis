@@ -2,10 +2,10 @@
 # Recency, Frequency and Monetary (RFM) Analysis 
 
 ## Menu
- - Objective
- - What is RFM Analysis? My Approach to the project
- - Findings an Insights
- - Business Recommendations
+ - [Objective](Objective)
+ - [How I approach the project?](WhatisRFMAnalysis?)
+ - [Findings anD Insights](FindingsandInsights)
+ - [Concrete Business Implications and Recommendations](ConcreteBusinessImplicationsandRecommendations)
 
 
 ## Objective
