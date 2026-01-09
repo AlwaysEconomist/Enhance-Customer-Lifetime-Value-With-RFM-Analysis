@@ -4,7 +4,7 @@
 ## Menu
  - [Objective](Objective)
  - [How I approach the project?](WhatisRFMAnalysis?)
- - [Findings anD Insights](FindingsandInsights)
+ - [Findings and Insights](FindingsandInsights)
  - [Concrete Business Implications and Recommendations](ConcreteBusinessImplicationsandRecommendations)
 
 
