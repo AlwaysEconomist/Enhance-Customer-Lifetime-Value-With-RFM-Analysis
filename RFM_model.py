@@ -1,5 +1,23 @@
-
 # RFM Customer Segmentation Analysis (Recency, Frequency and Monetary)
+
+## Dataset Description
+                      Online Retail Dataset, Transactions of a UK-based non-store online retail  
+
+ - InvoiceNo   : Unique 8-digit invoice number for each transaction. 
+              Invoices starting with 'C' indicate cancellations.
+ - StockCode   : Unique 8-digit code for each product.
+ - Description : Name of the product.
+ - Quantity    : Number of units of the product in the transaction.
+ - InvoiceDate : Date and time of the transaction.
+ - UnitPrice   : Price per unit (in GBP).
+ - CustomerID  : Unique 9-digit customer identifier.
+ - Country     : Country where the customer resides.
+
+Notes:
+- Contains transactions from 01/12/2022 and 30/06/2023 for a UK-based online retailer.
+- The company sells unique, all-occasion gifts.
+- Many customers are wholesalers.
+
 
 # Import the necessary libraries
 import pandas as pd
@@ -233,6 +251,7 @@ fig.update_layout(
 fig.show()
 
 rfm.to_csv('final_analysis.csv')
+
 
 
 
