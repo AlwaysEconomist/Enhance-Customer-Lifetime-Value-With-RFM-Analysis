@@ -13,6 +13,7 @@
 Many businesses stumble by treating all customers the same, leaning on generic marketing tactics and uniform messaging, yet struggle with flat revenue growth. The reality is, customers differ greatly in their value and behavior. RFM Analysis offers a clear, data-driven approach to identify the most valuable customers and decode their purchasing patterns.
 In this project, as a Data Analyst at Needpam, I worked on a practical, step-by-step implementation of RFM Analysis using Python, equipping the marketing team to design targeted retention strategies and supercharge revenue growth.
 
+<img width="1433" height="565" alt="Screenshot 2025-11-03 134340" src="https://github.com/user-attachments/assets/1085ed99-bd24-43c6-b920-9187f5b17da9" />
 
  ## What is RFM Analysis?
 
