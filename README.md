@@ -1,6 +1,15 @@
 
 # Recency, Frequency and Monetary (RFM) Analysis 
 
+## Menu
+ - Objective
+ - What is RFM Analysis? My Approach to the project
+ - Findings an Insights
+ - Business Recommendations
+
+
+## Objective
+
 Many businesses stumble by treating all customers the same, leaning on generic marketing tactics and uniform messaging, yet struggle with flat revenue growth. The reality is, customers differ greatly in their value and behavior. RFM Analysis offers a clear, data-driven approach to identify the most valuable customers and decode their purchasing patterns.
 In this project, as a Data Analyst at Needpam, I worked on a practical, step-by-step implementation of RFM Analysis using Python, equipping the marketing team to design targeted retention strategies and supercharge revenue growth.
 
@@ -15,7 +24,7 @@ RFM stands for Recency, Frequency, and Monetary. It’s a marketing analysis too
 
 By combining these three metrics, you can group customers into different segments and develop targeted strategies for each group.
 
-## Import the necessary libraries
+#### Import the necessary libraries
 
 ```
 import pandas as pd
@@ -26,7 +35,7 @@ import plotly.colors
 
 ```
 
-## Load and inspect the dataset
+#### Load and inspect the dataset
 
 ```
 data = pd.read_csv(r"C:\Users\phabr\Downloads\online_retail_rfm_50k.csv")
@@ -48,7 +57,7 @@ Dataset Loaded:
 |66898691|21535859 |May Gift|9|2023-03-10 19:20:11|8.30|380841810|United Kingdom|
 |59508416|93622551 |Study Gift|6|2023-06-07 21:03:18|36.64|150595719 |United Kingdom|
 
-## Data Cleaning and Preparation
+#### Data Cleaning and Preparation
 
 ```
 # Remove rows with missing CustomerID
@@ -72,7 +81,7 @@ reference_date = data['InvoiceDate'].max() + timedelta(days=1)
 
 ```
 
-## Create RFM Table
+#### Create RFM Table
 
 Calculate RFM Values.
 To perform the analysis, we calculate Recency, Frequency, and Monetary values for each customer.  
@@ -110,7 +119,7 @@ RFM Table:
 |101018341 |3|13| 5300.86|
 |101210606|4|17|9254.03|
 
-## Define R, F, M scoring functions
+#### Define R, F, M scoring functions
 
 Now, we’ll transform the raw RFM values into scores (1-4) to create customer segments. The scoring is based on quartiles:
 
@@ -158,7 +167,7 @@ rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis=1)
 
 ```
 
-## Assign segment labels (High, Mid, Low value customers)
+#### Assign segment labels (High, Mid, Low value customers)
 
 ```
 def assign_segment(score):
@@ -188,7 +197,7 @@ RFM Segment Labels Assigned:
 |101210606|4|17|9254.03|4|3|3|433|10|High Value|
 
 
-## Customers Distribution by Segment and Visualization - Bar Chart
+#### Customers Distribution by Segment and Visualization - Bar Chart
 
 ```
 segment_counts = rfm['RFM_Segment_Labels'].value_counts().reset_index()
